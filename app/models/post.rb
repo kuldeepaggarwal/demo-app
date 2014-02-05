@@ -4,6 +4,8 @@ class Post < ActiveRecord::Base
   # Callbacks
   after_create :send_notification_mail
 
+  has_paper_trail
+
   private
     def send_notification_mail
       # Notifier.post_create(self).deliver
