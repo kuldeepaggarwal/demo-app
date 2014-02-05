@@ -1,39 +1,22 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.16'
+gem 'rails',                               '3.2.16'
+gem 'activerecord-jdbcpostgresql-adapter', '~> 1.3.6'
+gem 'jquery-rails',                        '~> 3.1.0'
+gem 'jruby-openssl',                       '~> 0.9.4'
+gem 'delayed_job',                         '~> 4.0.0'
+gem 'delayed_job_active_record',           '~> 4.0.0'
+gem 'jruby-rack-worker',                   '~> 0.10.0', platform: :jruby
+gem 'daemons',                             '~> 1.1.9', require: true
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'activerecord-jdbcpostgresql-adapter'
-
-gem 'jruby-openssl'
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyrhino'
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'therubyrhino', '~> 2.0.2'
+  gem 'uglifier',     '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+group :development do
+  gem 'ruby-debug-base', '~> 0.10.4'
+  gem 'quiet_assets',    '~> 1.0.2'
+end

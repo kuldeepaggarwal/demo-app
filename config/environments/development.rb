@@ -34,4 +34,13 @@ DemoApp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :user_name => 'windows-mailer-2620075e7d7761f3',
+    :password => '8d865fd420ccb69f',
+    :address => 'mailtrap.io',
+    :port => '2525',
+    :authentication => :plain
+  }
 end
