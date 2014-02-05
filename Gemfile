@@ -9,6 +9,8 @@ gem 'delayed_job_active_record',           '~> 4.0.0'
 gem 'jruby-rack-worker',                   '~> 0.10.0', platform: :jruby
 gem 'daemons',                             '~> 1.1.9', require: true
 gem 'paper_trail',                         '~> 3.0.0'
+gem 'carrierwave',                         '~> 0.9.0'
+gem 'rmagick4j',                           '~> 0.3.8'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

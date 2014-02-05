@@ -1,5 +1,7 @@
 class Post < ActiveRecord::Base
-  attr_accessible :description, :title
+  attr_accessible :description, :title, :image
+
+  mount_uploader :image, ImageUploader
 
   # Callbacks
   after_create :send_notification_mail
