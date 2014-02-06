@@ -9,6 +9,8 @@ gem 'delayed_job_active_record',           '~> 4.0.0'
 gem 'jruby-rack-worker',                   '~> 0.10.0', platform: :jruby
 gem 'daemons',                             '~> 1.1.9', require: true
 gem 'paper_trail',                         '~> 3.0.0'
+gem 'jdbc-mysql',                          '~> 5.1.28', platform: :jruby
+gem 'thinking-sphinx',                     '~> 3.1.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
